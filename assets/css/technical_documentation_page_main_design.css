@@ -1,0 +1,144 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+/* ---- */
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  header {
+    font-weight: bolder;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 25px;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the side navigation bar */
+  .sidenav {
+    overflow: hidden;
+    background-color: navy;
+  }
+  
+  /* Style the sidenav links */
+  .sidenav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: lightblue;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 25%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 75%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Technical Documentation Image */
+  img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .technical-documentation-img {
+    /* background-color: navy; */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 25px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: navy;
+    color: white;
+    margin-top: 20px;
+  }
+
+  /* ----- */
+
+  .zoom {
+    /* padding: 50px; */
+    /* background-color: lightgray; */
+    transition: transform .2s; /* Animation */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+  
+/* ----- */
+
+:target {
+  animation: highlight 30s;
+}
+@keyframes highlight {
+  0% {background: transparent;}
+  10% {background: #F8F99A;}
+  100% {background: transparent;}
+}
+
+
+ol {
+  background: navy;
+  border-radius: 25px;
+  color: white;
+  padding: 20px;
+}
